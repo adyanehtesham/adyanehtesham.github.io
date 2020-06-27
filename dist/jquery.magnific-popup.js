@@ -1960,6 +1960,13 @@ $.magnificPopup.registerModule(RETINA_NS, {
 	}
 });
 
+$('.gallery-item').magnificPopup({
+	type: 'image',
+	gallery:{
+	  enabled:true
+	}
+  });
+
 /*>>retina*/
 
 /*>>fastclick*/

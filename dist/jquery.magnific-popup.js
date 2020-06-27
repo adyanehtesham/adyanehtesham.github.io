@@ -1960,12 +1960,7 @@ $.magnificPopup.registerModule(RETINA_NS, {
 	}
 });
 
-$('.gallery-item').magnificPopup({
-	type: 'image',
-	gallery:{
-	  enabled:true
-	}
-  });
+	newFunction($);
 
 /*>>retina*/
 
@@ -2066,3 +2061,12 @@ $('.gallery-item').magnificPopup({
 
 /*>>fastclick*/
 })(window.jQuery || window.Zepto);
+
+function newFunction($) {
+	$('.gallery-item').magnificPopup({
+		type: 'image',
+		gallery: {
+			enabled: true
+		}
+	});
+}

@@ -1908,7 +1908,7 @@ $(document).ready(function() {
 		delegate: 'a',
 		type: 'image',
 		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
+		mainClass: 'mfp-fade',
 		gallery: {
 			enabled: true,
 			navigateByImgClick: true,

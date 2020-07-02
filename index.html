@@ -155,6 +155,17 @@
 					<a target="_blank" href="mailto:adyan.ehtesham@gmail.com">Email</a>
 				</span>
 			</div></div>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+		<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="js/jquery.fixedTOC.js?v=3.0"></script>
 		<script src="dist/jquery.magnific-popup.js?v=0.9.8"></script>
@@ -192,7 +203,10 @@
 		        });
 
 		        $('.simple-ajax-popup').magnificPopup({
-		          type: 'ajax'
+				  type: 'ajax'
+
+				$('.image-link').magnificPopup({type:'image'});
+
 		        });
 		      });
 		</script>
@@ -208,44 +222,12 @@
 		});
 		</script>
 		<script>
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-1965499-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-			$('.gallery-item').magnificPopup({
+		  $('.gallery-item').magnificPopup({
 				type: 'image',
 				gallery:{
 				enabled:true
 				}
 			});
-		</script>
-		<script>
-			$(document).ready(function() {
-	$('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-		}
-	});
-});
-
 		</script>
 	</body>
 </html>

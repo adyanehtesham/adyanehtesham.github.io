@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns:  2fr 10fr;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+        "menu content";
+    margin: 0%;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.menu {
+    font-weight: 500;
+    margin: 2% 10% 20px 10%;
+    grid-area: menu;
+    min-width: 120px;
+}
+
+.menu a:hover {
+    color: #656565;
+}
+
+.menu h2, h3 {
+    font-size: 18px;
+}
+
+.menu h3 {
+    font-weight: 300;
+}
+
+.menu br {
+    line-height: 30px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.landing-content {
+    grid-area: content;
+    background-image: url(../assets/meblue.jpg);
+    background-size: cover;
+    background-position: 40% 0%;
+}
+
+#title {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+#landing-name {
+    position: relative;
+    margin: 10% 10% 5px 50%;
+    color: #fff;
+    font-size: 68px;
+    font-weight: 900;
+    grid-area: content;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+#landing-description {
+    color: #fff;
+    margin: 0px 10% 5px 50%;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: 300;
+    grid-area: content;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.code-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    margin: 2% 2.5% 1.5% 0px;
+}
+
+.code-description {
+    max-width: 50%;
+}
+
+.code-preview {
+    max-width: 50%;
+}
+
+#skiply-preview {
+    padding-bottom: 0%;
+    margin: 1.5% 0% 0px 0px;
+    display: flex;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 712px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.skiply-images img {
+    max-width: 45%;
+    margin-bottom: 5%;
+}
+
+.chat-container {
+    max-width: 33.33%;
+}

@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Photo</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Personal Website">
-		<meta name="keywords" content="Adyan Ehtesham" />
-		<meta name="author" content="Adyan Ehtesham" />
-        <link href="styles/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
-    </head>
-    <body>
-        <div class="menu">
-            <h1 id="title"><a href="index.html">Adyan</a></h1>
-            <br>
-            <h2><a href="code.html">Code</a></h2>
-            <h2><a href="data.html">Data</a></h2>
-            <h2><a href="video.html">Video</a></h2>
-            <h2><a href="photo.html">Photo</a></h2>
-            <br>
-            <h3>Resume</h3>
-            <h3>Contact</h3>
-        </div>
-        <div id="contentbg" class="content">
-        </div>
-    </body>
+
+<head>
+    <title>Photo</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Website">
+    <meta name="keywords" content="Adyan Ehtesham" />
+    <meta name="author" content="Adyan Ehtesham" />
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+</head>
+
+<body>
+    <div class="menu">
+        <h1 id="title"><a href="index.html">Adyan</a></h1>
+        <br>
+        <h2><a href="code.html">Code</a></h2>
+        <h2><a href="data.html">Data</a></h2>
+        <h2><a href="video.html">Video</a></h2>
+        <h2><a href="photo.html">Photo</a></h2>
+        <br>
+        <h3>Resume</h3>
+        <h3>Contact</h3>
+    </div>
+    <div class="grid">
+        <img class="grid-item" src="assets/photo-meblue.jpg" alt="">
+        <img class="grid-item" src="assets/photo-window.jpg" alt="">
+        <img class="grid-item" src="assets/photo-damiblu.jpg" alt="">
+        <img class="grid-item" src="assets/photo-PPSPP (8).jpg" alt="">
+        <img class="grid-item" src="assets/photo-back2back.jpg" alt="">
+        <img class="grid-item" src="assets/photo-PPSPP (16).jpg" alt="">
+        <img class="grid-item" src="assets/photo-D3 Imran.jpg" alt="">
+        <img class="grid-item" src="assets/photo-camel.jpg" alt="">
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        var elem = document.querySelector('.grid');
+        var msnry = new Masonry(elem, {
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 500
+        });
+
+        // element argument can be a selector string
+        //   for an individual element
+        var msnry = new Masonry('.grid', {
+            // options
+        });
+    </script>
+</body>
+
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Personal Website">
+		<meta name="keywords" content="Adyan Ehtesham" />
+		<meta name="author" content="Adyan Ehtesham" />
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+    </head>
+    <body>
+        <div class="menu">
+            <h1 id="title"><a href="index.html">Adyan</a></h1>
+            <br>
+            <h2><a href="code.html">Code</a></h2>
+            <h2><a href="data.html">Data</a></h2>
+            <h2><a href="video.html">Video</a></h2>
+            <h2><a href="photo.html">Photo</a></h2>
+            <br>
+            <h3><a href="resume.html">Resume</a></h3>
+            <h3>Contact</h3>
+        </div>
+        <div class="content">
+            <div class="code-content ms-depth-16">
+                <div class="code-description">
+                    <h1>Chatbot - Python Rasa Implementation</h1><br>
+                    <p>Created a FAQ chat bot for my concept food delivery app (see below)
+                    <br><br>
+                    Scraped FAQs from existing services (deliveroo and uber eats) and
+                    cleansed that to create training data for the Rasa bot.
+                    <br><br>
+                    Ask it stuff about home food delivery</p>
+                </div>
+                <div class="chat-container"></div>
+            </div>
+            <div class="code-content ms-depth-16">
+                <div class="code-description">
+                    <h1>Skiply - Food Delivery App Concept</h1><br>
+                    <p>
+                        As part of an internship where I learned UI/UX Design and Front End Web
+                        development I was tasked to create a final product that implemented all
+                        that I have learned.<br><br>
+                        Although very generic, this is just to showcase what I can do in my first project
+                        using HTML/CSS and JavaScript, with the help of Figma to design it.<br><br>
+                        Scroll down to explore.
+                    </p>
+                </div>
+                <div id="skiply-preview" class="code-preview skiply-images">
+                    <img src="./assets/Preview1.png" alt="">
+                    <img src="./assets/Preview2.png" alt="">
+                    <img src="./assets/Preview3.png" alt="">
+                    <img src="./assets/Preview4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
+        <script type="text/javascript">
+            var chatroom = new window.Chatroom({
+            host: "http://95eed29c5991.ngrok.io",
+            container: document.querySelector(".chat-container"),
+            speechRecognition: "en-US",
+            });
+            chatroom.openChat();
+        </script>
+    </body>
+</html>

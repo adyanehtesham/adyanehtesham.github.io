@@ -5,6 +5,7 @@ body {
     grid-template-rows: 100vh;
     grid-template-areas: "menu content";
     margin: 0%;
+    background-color: #fff;
 }
 
 a {
